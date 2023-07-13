@@ -1,5 +1,25 @@
+<script>
+	import { goto } from '$app/navigation';
+	import Button from '../components/Button.svelte';
+</script>
+
+<svelte:head>
+	<title>EarlySoftware</title>
+</svelte:head>
+
 <div>
 	<h1>EarlySoftware</h1>
+	<p>Early access manager for the web.</p>
+
+	<span id="button">
+		<span id="github">
+			<Button content="GitHub" on:click={() => goto('https://github.com/earlysoftware/core')} />
+		</span>
+
+		<span id="documentation">
+			<Button content="Documentation" />
+		</span>
+	</span>
 </div>
 
 <style>
@@ -12,6 +32,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
+	}
+
+	#github,
+	#documentation {
+		display: inline-block;
+	}
+
+	p,
+	#button {
+		margin-top: 15px;
 	}
 
 	h1 {
