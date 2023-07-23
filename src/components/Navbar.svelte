@@ -1,5 +1,8 @@
 <div id="navbar">
-	<p>📦 EarlySoftware</p>
+	<p>
+		<img src="src/img/icon.png" alt="icon" draggable="false" />
+		EarlySoftware
+	</p>
 </div>
 
 <style>
@@ -17,6 +20,11 @@
 		background-color: var(--background-color);
 		position: relative;
 		z-index: 500;
+	}
+
+	img {
+		width: 30px;
+		vertical-align: middle;
 	}
 
 	#navbar p {

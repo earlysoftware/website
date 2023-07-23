@@ -6,7 +6,6 @@
 <svelte:head>
 	<title>EarlySoftware</title>
 	<meta name="description" content="Open source early access manager for the web written in Go." />
-	<link rel="icon" type="image/x-icon" href="src/img/favicon.ico" />
 </svelte:head>
 
 <div>
@@ -30,7 +29,13 @@
 			</span>
 
 			<span id="documentation">
-				<Button style="docs" content="Docs" />
+				<Button
+					style="docs"
+					content="Docs"
+					on:click={() => {
+						goto('docs/');
+					}}
+				/>
 			</span>
 		</span>
 	</span>
