@@ -6,6 +6,7 @@
 <svelte:head>
 	<title>EarlySoftware</title>
 	<meta name="description" content="Open source early access manager for the web written in Go." />
+	<link rel="icon" type="image/x-icon" href="src/img/favicon.ico" />
 </svelte:head>
 
 <div>
