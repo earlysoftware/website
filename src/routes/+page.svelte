@@ -5,6 +5,7 @@
 
 <svelte:head>
 	<title>EarlySoftware</title>
+	<meta name="description" content="Open source early access manager for the web written in Go." />
 </svelte:head>
 
 <div>
