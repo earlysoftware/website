@@ -3,11 +3,6 @@
 	import Button from '../components/Button.svelte';
 </script>
 
-<svelte:head>
-	<title>EarlySoftware</title>
-	<meta name="description" content="Open source early access manager for the web written in Go." />
-</svelte:head>
-
 <div>
 	<span id="h1-background">
 		<h1>EarlySoftware</h1>
@@ -42,14 +37,6 @@
 </div>
 
 <style>
-	:root {
-		--background-color: #e7ebe5;
-	}
-
-	:global(body) {
-		background-color: var(--background-color);
-	}
-
 	div {
 		height: 100%;
 		width: 100%;
