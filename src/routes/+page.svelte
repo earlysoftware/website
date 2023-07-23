@@ -53,8 +53,6 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-
-		right: 100px;
 	}
 
 	#github,
@@ -106,12 +104,31 @@
 	}
 
 	h1 {
-		font-size: 3em;
-		font-weight: 800;
-
 		font-family: 'Rubik';
 		font-weight: 800;
 
-		font-size: 3.5em;
+		font-size: clamp(2.3em, 10vw, 3.5em);
+		word-break: break-all;
+	}
+
+	@media (max-width: 767px) {
+		#h1-background {
+			right: 0px;
+			border-radius: 15px;
+		}
+
+		p {
+			text-align: center;
+		}
+
+		#text-button-wrapper {
+			display: block;
+		}
+
+		#button {
+			display: flex;
+			justify-content: center;
+			gap: 5px;
+		}
 	}
 </style>
