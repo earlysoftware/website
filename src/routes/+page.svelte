@@ -12,29 +12,35 @@
 		<h1>EarlySoftware</h1>
 	</span>
 
-	<p>
-		Open source <span id="poppins-800">early access manager</span> for the web <br /> written in
-		<span id="go-text">Go</span>.
-	</p>
+	<span id="text-button-wrapper">
+		<p>
+			Open source <span id="poppins-800">early access manager</span> for the web <br /> written in
+			<span id="go-text">Go</span>.
+		</p>
 
-	<span id="button">
-		<span id="github">
-			<Button
-				style="github"
-				content="GitHub"
-				on:click={() => goto('https://github.com/earlysoftware/core')}
-			/>
-		</span>
+		<span id="button">
+			<span id="github">
+				<Button
+					style="github"
+					content="GitHub"
+					on:click={() => goto('https://github.com/earlysoftware/core')}
+				/>
+			</span>
 
-		<span id="documentation">
-			<Button style="docs" content="Docs" />
+			<span id="documentation">
+				<Button style="docs" content="Docs" />
+			</span>
 		</span>
 	</span>
 </div>
 
 <style>
+	:root {
+		--background-color: #e7ebe5;
+	}
+
 	:global(body) {
-		background-color: #e7ebe5;
+		background-color: var(--background-color);
 	}
 
 	div {
@@ -56,13 +62,13 @@
 		display: inline-block;
 	}
 
-	p,
-	#button {
+	p {
 		margin-top: 15px;
 	}
 
 	#button {
-		margin-top: 30px;
+		position: relative;
+		top: 30px;
 	}
 
 	#h1-background {

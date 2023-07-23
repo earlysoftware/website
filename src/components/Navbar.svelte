@@ -13,6 +13,10 @@
 
 		border-bottom: black solid 2px;
 		font-family: 'Rubik';
+
+		background-color: var(--background-color);
+		position: relative;
+		z-index: 500;
 	}
 
 	#navbar p {
