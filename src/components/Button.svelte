@@ -1,11 +1,10 @@
 <script lang="ts">
 	export let content: string;
 	export let disabled = false;
+	export let style: string;
 </script>
 
-<div id="button-wrapper">
-	<button on:click {disabled} aria-disabled={disabled}>{content}</button>
-</div>
+<button on:click class={style} {disabled} aria-disabled={disabled}>{content}</button>
 
 <style>
 	button {
@@ -15,10 +14,23 @@
 
 		border-radius: 5px;
 
-		background-color: #393939;
 		color: white;
-		font-family: 'Inter';
-		font-weight: 700;
+		font-family: 'Rubik';
+		font-weight: 600;
+		font-size: 1.35em;
+	}
+
+	.github {
+		background-color: #545e56;
+	}
+
+	.docs {
+		background-color: #917c78;
+	}
+
+	button:hover {
+		filter: brightness(80%);
+		transition: filter 0.2s;
 	}
 
 	button:disabled {

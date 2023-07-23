@@ -8,21 +8,35 @@
 </svelte:head>
 
 <div>
-	<h1>EarlySoftware</h1>
-	<p>Early access manager for the web.</p>
+	<span id="h1-background">
+		<h1>EarlySoftware</h1>
+	</span>
+
+	<p>
+		Open source <span id="poppins-800">early access manager</span> for the web <br /> written in
+		<span id="go-text">Go</span>.
+	</p>
 
 	<span id="button">
 		<span id="github">
-			<Button content="GitHub" on:click={() => goto('https://github.com/earlysoftware/core')} />
+			<Button
+				style="github"
+				content="GitHub"
+				on:click={() => goto('https://github.com/earlysoftware/core')}
+			/>
 		</span>
 
 		<span id="documentation">
-			<Button content="Documentation" />
+			<Button style="docs" content="Docs" />
 		</span>
 	</span>
 </div>
 
 <style>
+	:global(body) {
+		background-color: #e7ebe5;
+	}
+
 	div {
 		height: 100%;
 		width: 100%;
@@ -33,6 +47,8 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+
+		right: 100px;
 	}
 
 	#github,
@@ -45,8 +61,51 @@
 		margin-top: 15px;
 	}
 
+	#button {
+		margin-top: 30px;
+	}
+
+	#h1-background {
+		background-color: rgba(102, 119, 97, 0.42);
+		border-radius: 24px;
+
+		padding: 5px 10px;
+
+		position: relative;
+		right: 100px;
+	}
+
+	p {
+		font-family: 'Lora';
+		font-weight: 700;
+		font-size: 1.4em;
+	}
+
+	#poppins-800 {
+		font-weight: 800;
+		font-style: italic;
+		font-family: 'Poppins';
+
+		line-height: 30px;
+	}
+
+	#go-text {
+		color: #545e56;
+
+		font-weight: 900;
+	}
+
+	#go-text::selection {
+		color: black;
+	}
+
 	h1 {
 		font-size: 3em;
 		font-weight: 800;
+
+		font-family: 'Rubik';
+		font-weight: 800;
+
+		font-size: 3.5em;
 	}
 </style>

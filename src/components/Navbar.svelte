@@ -12,6 +12,7 @@
 		height: var(--navbar-height);
 
 		border-bottom: black solid 2px;
+		font-family: 'Rubik';
 	}
 
 	#navbar p {
