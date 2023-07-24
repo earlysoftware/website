@@ -1,6 +1,10 @@
+<script lang="ts">
+	import icon from '$lib/assets/icon.png';
+</script>
+
 <div id="navbar">
 	<p>
-		<img src="src/img/icon.png" alt="icon" draggable="false" />
+		<img src={icon} alt="icon" draggable="false" />
 		EarlySoftware
 	</p>
 </div>
