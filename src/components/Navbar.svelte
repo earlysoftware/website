@@ -1,12 +1,5 @@
-<script lang="ts">
-	import icon from '$lib/assets/icon.png';
-</script>
-
 <div id="navbar">
-	<p>
-		<img src={icon} alt="icon" draggable="false" />
-		EarlySoftware
-	</p>
+	<p>📦 EarlySoftware</p>
 </div>
 
 <style>

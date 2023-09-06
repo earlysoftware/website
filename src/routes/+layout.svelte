@@ -16,7 +16,7 @@
 
 <style>
 	:root {
-		--background-color: #e7ebe5;
+		--background-color: #fffdfa;
 	}
 
 	:global(body) {
